@@ -1,0 +1,42 @@
+<svg width="1300" height="300" viewBox="0 0 1300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d1b69" />
+      <stop offset="35%" stop-color="#1e3a5f" />
+      <stop offset="65%" stop-color="#1e4d5c" />
+      <stop offset="100%" stop-color="#2d5f4f" />
+    </linearGradient>
+
+    <!-- Soft blur for the floating wave layers -->
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1300" height="300" rx="14" fill="url(#bgGradient)" />
+
+  <!-- Name -->
+  <text x="650" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="800"
+        fill="#c9d1e8" text-anchor="middle" opacity="0.92">
+    Tarun Savalapurapu
+  </text>
+
+  <!-- Subtitle -->
+  <text x="650" y="188" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="600"
+        fill="#a8b6d8" text-anchor="middle" opacity="0.9">
+    Aspiring Full Stack Developer  •  Frontend Developer  •  CS Student
+  </text>
+
+  <!-- Floating wave layer 1 (furthest back, most transparent) -->
+  <path d="M0,250 Q220,215 440,240 T880,235 T1300,215 L1300,300 L0,300 Z"
+        fill="#000000" opacity="0.18" filter="url(#softBlur)" />
+
+  <!-- Floating wave layer 2 (middle) -->
+  <path d="M0,268 Q260,232 520,258 T1040,248 T1300,255 L1300,300 L0,300 Z"
+        fill="#000000" opacity="0.28" filter="url(#softBlur)" />
+
+  <!-- Floating wave layer 3 (front, closest, darkest) -->
+  <path d="M0,285 Q300,255 650,278 T1300,268 L1300,300 L0,300 Z"
+        fill="#000000" opacity="0.38" />
+</svg>
